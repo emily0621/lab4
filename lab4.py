@@ -1,4 +1,5 @@
 from flask import Flask
+from waitress import serve
 
 lab4 = Flask(__name__)
 
@@ -7,6 +8,5 @@ lab4 = Flask(__name__)
 def helloWorld():
     return 'Hello World 2'
 
-
-if __name__ == '__main__':
-    lab4.run(debug=True)
+# if __name__ == '__main__':
+#     lab4.run(debug=True)
